@@ -13,6 +13,10 @@
   src: url(../../assets/fonts/arialmt.ttf);
   font-weight: 400;
 }
+body {
+  font-family: Arial, sans-serif;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -36,7 +40,7 @@
 }
 
 .logo-title-text {
-  font-family: Georgia;
+  font-family: Georgia, sans-serif;
   color: #f1cdb3;
   font-weight: 400;
   font-size: 32px;
@@ -44,13 +48,14 @@
 }
 
 .logo-title-text-text {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: #fff;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
   padding-top: 10px;
+  letter-spacing: 10%;
 }
 
 .nav-list {
@@ -63,7 +68,7 @@
 }
 
 .nav-link {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
@@ -89,7 +94,7 @@
 
 .hero-title {
   width: 310px;
-  font-family: Georgia;
+  font-family: Georgia, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 44px;
@@ -99,7 +104,7 @@
 
 .hero-text {
   padding-top: 42px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
@@ -119,7 +124,7 @@
   width: 207px;
   height: 52px;
   border-radius: 100px;
-  font-family: Georgia;
+  font-family: Georgia, sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 22px;
@@ -132,9 +137,54 @@
   padding-top: 0px;
   width: 698px;
   height: 728px;
-  background-image: url(../../assets/images/start-screen-puppy.svg);
+  background-image: url("../../assets/images/start-screen-puppy.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+}
+
+.section.about-the-shelter {
+  height: 588px;
+  background-color: #fff;
+}
+
+.about-content {
+  display: flex;
+  height: 408px;
+  justify-content: space-evenly;
+  padding-top: 80px;
+}
+
+.img-about-pets {
+  display: block;
+  background-image: url("");
+}
+
+.about-title {
+  width: 430px;
+  height: 380px;
+}
+
+.about-heading {
+  width: 370px;
+  height: 90px;
+  padding-top: 14px;
+  font-family: Georgia, sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  line-height: 45px;
+  font-weight: 400;
+  color: #545454;
+  letter-spacing: 6%;
+}
+
+.about-text {
+  padding-top: 25px;
+  font: Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 400;
+  color: #4C4C4C;
 }
 
 /*# sourceMappingURL=style.css.map */
