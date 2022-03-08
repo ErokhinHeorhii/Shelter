@@ -293,11 +293,55 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    background-color:#F1CDB3; ;
+    background-color: #f1cdb3;
     border: 2px solid #f1cdb3;
     color: #292929;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+}
+// SECTION OUR FRIEND///////////////////////////////////////////////////////////////
 
+.section-can-help {
+    height: 611px;
+}
+
+.title.can-help {
+    padding-top: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper-can-help {
+    // position: relative;
+    padding-top: 150px;
+    max-width: 1026px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    row-gap: 55px;
+    column-gap: 113px;
+}
+
+.can-help-item {
+    width: auto;
+    height: 113px;
+    display: flex;
+flex-direction: column;
+}
+
+.can-help-text {
+    padding-top: 30px;
+    font-family: Georgia;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.can-help-img {
+    margin: 0 auto;
 }
