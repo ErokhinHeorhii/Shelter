@@ -90,6 +90,8 @@ body {
     text-decoration: none;
 }
 
+// SECTION HERO
+
 .hero-container {
     padding-top: 60px;
     height: 908-120px;
@@ -104,6 +106,7 @@ body {
     width: 460px;
     height: 321px;
 }
+
 .hero-title {
     width: 310px;
     font-family: $fontGeorgia;
@@ -176,6 +179,7 @@ body {
     height: 380px;
 }
 
+.title,
 .about-heading {
     width: 370px;
     height: 90px;
@@ -189,13 +193,111 @@ body {
     letter-spacing: 6%;
 }
 
-.about-text{
+.about-text {
     padding-top: 25px;
-    font:$fontArial;
+    font: $fontArial;
     font-size: 15px;
     font-style: normal;
     line-height: 24px;
     font-weight: 400;
-    color: #4C4C4C
-    ;
+    color: #4c4c4c;
+}
+
+// SECTION OUR FRIEND
+
+.our-friend {
+    max-height: 877px;
+    background: #f6f6f6;
+    padding: 0 30px;
+}
+
+.section-our-friend {
+    height: 877px;
+}
+
+.title.our-friend {
+    margin: 0 auto;
+    padding-top: 135px;
+    width: 412px;
+    text-align: center;
+}
+
+.wrapper-our-friend {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.button-prev-next {
+    margin-top: 192px;
+    display: block;
+    height: 52px;
+    width: 52px;
+    border-radius: 100px;
+    border: 2px solid #f1cdb3;
+}
+
+.card {
+    height: 435px;
+    width: 270px;
+    background-color: #fafafa;
+    // margin-right: 90px;
+}
+
+.card:first-child {
+    margin-left: 53px;
+}
+
+.card:last-child {
+    margin-right: 53px;
+}
+
+.card-name {
+    padding-top: 30px;
+    text-align: center;
+    font-family: $fontGeorgia;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.card-button {
+    margin-top: 30px;
+    width: 187px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #f1cdb3;
+    font-family: $fontGeorgia;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: inherit;
+}
+
+.button-our-friend {
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 52px;
+    width: 261px;
+    border-radius: 100px;
+    font-family: Georgia;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    background-color:#F1CDB3; ;
+    border: 2px solid #f1cdb3;
+    color: #292929;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+
 }
