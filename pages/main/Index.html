@@ -20,16 +20,16 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About the shelter</a>
+                        <a href="#about-the-shelter" class="nav-link nav-link-first">About the shelter</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Our pets</a>
+                        <a href="#our-friend" class="nav-link">Our pets</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Help the shelter</a>
+                        <a href="#can-help" class="nav-link">Help the shelter</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contacts</a>
+                        <a href="#footer" class="nav-link">Contacts</a>
                     </li>
             </nav>
         </div>
@@ -47,7 +47,7 @@
             </section>
         </div>
         <div class="container about-the-shelter">
-            <section class="section about-the-shelter">
+            <section class="section about-the-shelter" id="about-the-shelter">
                 <div class="about-content">
                     <img src="../../assets/images/about-pets.jpg" width="300" height="408" alt="img"
                         class="img-about-pets">
@@ -66,12 +66,11 @@
             </section>
         </div>
         <div class="container our-friend">
-            <section class="section-our-friend">
+            <section class="section-our-friend" id="our-friend">
                 <h2 class="title our-friend">Our friends who <br>
                     are looking for a house</h2>
-
                 <div class="wrapper-our-friend">
-                    <button class="button-prev-next ">
+                    <button class="button-prev button-prev-next ">
                         <img class="image-button-prev" src="../../assets/images/Arrow.svg" alt="button">
                     </button>
                     <div class="card">
@@ -98,15 +97,18 @@
                             <p>Learn more</p>
                         </button>
                     </div>
-                    <button class="button-prev-next">
+                    <button class="button-prev-next button-next">
                         <img class="image-button-prev" src="../../assets/images/Arrow-next.svg" alt="button">
                     </button>
                 </div>
-                <button class="button-our-friend">Get to know the rest</button>
+                <form action="./indexSecond.html" target="_blank">
+                    <button class="button-our-friend">Get to know the rest
+                    </button>
+                </form>
             </section>
         </div>
         <div class="container can-help">
-            <section class="section-can-help">
+            <section class="section-can-help" id="can-help">
                 <h2 class="title can-help">How you can help <br>
                     our shelter</h2>
                 <div class="wrapper-can-help">
@@ -162,26 +164,29 @@
         </div>
         <div class="container make-donation">
             <section class="section-make-donation">
-                <img src="../../assets/images/donation-dog.svg" width="505" height="261" alt="img" class="img-donation">
+                <img src="../../assets/images/donation-dog.png" width="505" height="261" alt="img" class="img-donation">
                 <div class="can-make-donation">
                     <h2 class="title donation-title">You can also <br> make a donation</h2>
                     <p class="about-text-donation">Name of the bank / Type of bank account</p>
-                    <div class="donation-card">
-                        <img src="../../assets/icons/credit-card.svg" alt="" class="donation-image" width="30"
-                            height="23">
-                        <p class="number-card"> 8380 2880 8028 8791 7435</p>
-                    </div>
+                    <a href="" class="donation-href">
+                        <div class="donation-card">
+                            <img src="../../assets/icons/credit-card.svg" alt="" class="donation-image" width="30"
+                                height="23">
+                            <p class="number-card"> 8380 2880 8028 8791 7435</p>
+                        </div>
+                    </a>
                     <p class="donation-text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
                         elit.
                         Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
                         vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
+                </a>
             </section>
         </div>
     </main>
     <footer class="footer">
         <div class="container for-question">
-            <section class="section-for-question">
+            <section class="section-for-question" id="footer">
                 <div class="footer-adress">
                     <h2 class="title title-for-question">For questions <br> and suggestions</h2>
                     <p class="e-mail">email@shelter.com</p>
@@ -193,7 +198,7 @@
                     <p class="adress"> 18 South Park, London </p>
                 </div>
                 <div class="footer-puppy">
-                    
+
                 </div>
             </section>
     </footer>
