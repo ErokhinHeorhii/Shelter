@@ -3,6 +3,52 @@
   margin: 0 0;
 }
 
+.header-burger {
+  display: none;
+  width: 30px;
+  height: 22px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.burger-line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: 0.4s;
+}
+
+.burger-line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+
+.burger-line:nth-child(3) {
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.active-burger-line:nth-child(1) {
+  transition: 0.4s;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.active-burger-line:nth-child(2) {
+  transition: 0.4s;
+  display: none;
+}
+
+.active-burger-line:nth-child(3) {
+  transition: 0.4s;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+
 @font-face {
   font-family: Georgia;
   src: url(../../assets/fonts/Georgia.ttf);
@@ -131,11 +177,11 @@ html {
 }
 
 .hero-wrapper {
-  margin-top: 223px;
+  margin-top: 165px;
   display: flex;
   flex-direction: column;
   width: 460px;
-  height: 321px;
+  min-height: 321px;
 }
 
 .hero-title {
@@ -195,11 +241,13 @@ button:hover,
 
 .wrapper-img {
   padding-top: 0px;
-  width: 698px;
+  max-width: 698px;
+  width: 100%;
   height: 728px;
   background-image: url("../../assets/images/start-screen-puppy.png");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-size: auto;
 }
 
 .container.about-the-shelter,
@@ -214,7 +262,7 @@ button:hover,
 .about-content {
   display: flex;
   height: 408px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 80px;
 }
 
@@ -321,6 +369,10 @@ button:hover,
   height: 435px;
   width: 270px;
   background-color: #fafafa;
+}
+
+.image-card {
+  background-color: red;
 }
 
 .card:first-child {
@@ -518,7 +570,7 @@ button:hover,
 
 .section-for-question {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -526,6 +578,11 @@ button:hover,
   max-width: 278px;
   height: 234px;
   padding-top: 56px;
+}
+
+.mailto-email,
+.telephon {
+  text-decoration: none;
 }
 
 .e-mail,
@@ -561,10 +618,6 @@ button:hover,
   height: 32px;
 }
 
-.tel::before {
-  content: url(../../assets/icons/icon-phone.svg);
-}
-
 .adress {
   max-width: 302px;
   padding-left: 40px;
@@ -583,6 +636,86 @@ button:hover,
   width: 300px;
   height: 310px;
   background: url(../../assets/images/footer-puppy.png);
+}
+
+@media (max-width: 1280px) {
+  button + .card {
+    display: none;
+  }
+
+  .wrapper-can-help {
+    gap: 30px;
+  }
+
+  .can-help-item {
+    width: 30%;
+  }
+
+  .img-donation {
+    max-width: 505px;
+    width: 100%;
+    height: auto;
+  }
+
+  .for-question {
+    background-image: url(../../assets/images/footer-gradient-background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section-for-question {
+    justify-content: space-around;
+  }
+
+  .footer-adress {
+    width: 55%;
+  }
+
+  .footer-puppy {
+    width: 55%;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    margin-top: 93px;
+    background-position: center;
+  }
+}
+@media (max-width: 768px) {
+  .header-burger {
+    display: block;
+    z-index: 3;
+  }
+
+  .nav-list {
+    display: block;
+    position: fixed;
+    padding-left: 125px;
+    padding-top: 134px;
+    max-width: 620px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-left: 148px;
+    background-color: #000;
+    z-index: 3;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .nav-list.active-nav-list {
+    transition: 0.5s;
+    transform: translateX(0%);
+  }
+
+  .nav-item {
+    width: 180px;
+    padding-bottom: 10px;
+    font-size: px;
+    line-height: 35.5px;
+  }
+
+  .nav-link {
+    font-size: 23px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+.header-burger {
+    display: none;
+    width: 30px;
+    height: 22px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.burger-line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: .4s;
+}
+
+.burger-line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+
+.burger-line:nth-child(3) {
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.active-burger-line:nth-child(1) {
+    transition: 0.4s;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.active-burger-line:nth-child(2) {
+    transition: 0.4s;
+    display: none;
+}
+
+.active-burger-line:nth-child(3) {
+    transition: 0.4s;
+    bottom: 50%;
+    transform: translateY(50%) rotate(45deg);
+}

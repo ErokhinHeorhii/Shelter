@@ -10,6 +10,11 @@ $colorDarc: #545454;
 $fontArial: Arial, sans-serif;
 $colorfff: #fff;
 
+
+
+@import 'burger';
+
+
 @font-face {
     font-family: Georgia;
     src: url(../../assets/fonts/Georgia.ttf);
@@ -134,6 +139,8 @@ html {
 .nav-link-second:hover {
     color: #292929;
 }
+
+
 // SECTION HERO
 
 .hero-container {
@@ -144,11 +151,11 @@ html {
 }
 
 .hero-wrapper {
-    margin-top: 223px;
+    margin-top: 165px;
     display: flex;
     flex-direction: column;
     width: 460px;
-    height: 321px;
+    min-height: 321px;
 }
 
 .hero-title {
@@ -206,11 +213,13 @@ button:hover,
 
 .wrapper-img {
     padding-top: 0px;
-    width: 698px;
+    max-width: 698px;
+    width: 100%;    
     height: 728px;
     background-image: url("../../assets/images/start-screen-puppy.png");
     background-repeat: no-repeat;
     background-color: transparent;
+    background-size: auto;
 }
 
 // About the SHELTER/////////////////////////
@@ -226,7 +235,7 @@ button:hover,
 .about-content {
     display: flex;
     height: 408px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 80px;
 }
 
@@ -314,15 +323,15 @@ button:hover,
     transition: 0.2s;
 }
 
-.button-prev {
+// .button-prev {
     //   position: absolute;
     //   left: 55px;
-}
+// }
 
-.button-next {
+// .button-next {
     // position: absolute;
     // right: 55px;
-}
+// }
 
 .wrapper-prev-next {
     display: flex;
@@ -349,6 +358,9 @@ button:hover,
     background-color: #fafafa;
 }
 
+.image-card{
+    background-color: red;
+}
 .card:first-child {
     margin-left: 53px;
 }
@@ -546,7 +558,7 @@ button:hover,
 }
 .section-for-question {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -554,6 +566,10 @@ button:hover,
     max-width: 278px;
     height: 234px;
     padding-top: 56px;
+}
+.mailto-email,
+.telephon {
+    text-decoration: none;
 }
 
 .e-mail,
@@ -589,9 +605,8 @@ button:hover,
     height: 32px;
 }
 
-.tel::before {
-    content: url(../../assets/icons/icon-phone.svg);
-}
+// .tel::before {
+// }
 
 .adress {
     max-width: 302px;
@@ -614,3 +629,8 @@ button:hover,
     // background-color: transparent;
     // background-color: inherit;
 }
+
+
+@import 'media';
+
+

@@ -1,0 +1,88 @@
+@media (max-width: 1280px) {
+    button + .card {
+        display: none;
+    }
+
+    .wrapper-can-help {
+        gap: 30px;
+    }
+
+    .can-help-item {
+        width: 30%;
+    }
+
+    .img-donation {
+        max-width: 505px;
+        width: 100%;
+        height: auto;
+    }
+
+    // footer///////////
+
+    .for-question {
+        background-image: url(../../assets/images/footer-gradient-background1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section-for-question {
+        justify-content: space-around;
+    }
+
+    .footer-adress {
+        width: 55%;
+    }
+
+    .footer-puppy {
+        width: 55%;
+        margin-top: 50px;
+        background-repeat: no-repeat;
+        margin-top: 93px;
+        background-position: center;
+        // margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    // .nav {
+    //     display: none;
+    // }
+
+    .header-burger {
+        display: block;
+        z-index: 3;
+    }
+
+
+    .nav-list {
+        display: block;
+        position: fixed;
+        padding-left: 125px;
+        padding-top: 134px;
+        max-width: 620px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        margin-left: 148px;
+        background-color: #000;
+        z-index: 3;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+
+    .nav-list.active-nav-list {
+        transition: .5s;
+        transform: translateX(0%);
+    }
+
+    .nav-item {
+        width: 180px;
+        padding-bottom: 10px;
+        font-size: px;
+        line-height: 35.5px;
+    }
+
+    .nav-link {
+        font-size: 23px;
+    }
+}
