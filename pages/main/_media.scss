@@ -1,6 +1,83 @@
 @media (max-width: 1280px) {
-    button + .card {
+    // SECTION HERO
+
+    .header {
+        padding-top: 30px;
+        background-image: url(../../assets/images/start-screen-gradient-background768.png);
+        background-position: center 0px;
+        background-size: cover;
+    }
+
+    .hero-img {
         display: none;
+    }
+    .wrapper-img {
+        background-image: url(../../assets/images/start-screen-puppy-max-1280.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 569px;
+        height: 593px;
+        margin-top: 96px;
+        margin-left: 140px;
+    }
+
+    .hero-wrapper {
+        width: 460px;
+        margin-top: -28px;
+        padding-top: 0px;
+    }
+
+    .hero-container {
+        min-height: 1165px-90px;
+        background-image: url(../../assets/images/start-screen-gradient-background768.png);
+        background-position: center -90px;
+        background-size: cover;
+    }
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        // height: auto;
+    }
+
+    .hero-button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    //About the shelter/////////
+    //About the shelter/////////
+
+    .about-text {
+        padding-top: 25px;
+    }
+
+    .about-content {
+        padding-top: 65px;
+    }
+
+    .img-about-pets {
+        margin-top: 30px;
+        margin-left: -47px;
+        margin-bottom: 50px;
+    }
+
+    // OUR FRIEND//////
+    // OUR FRIEND//////
+    .wrapper-our-friend {
+        margin-top: 60px;
+        width: auto;
+    }
+
+    .card:nth-child(4) {
+        display: none;
+    }
+
+    // HOW YOU CAN HELP/////////
+    // HOW YOU CAN HELP/////////
+
+    .wrapper-can-help {
+        padding-top: 60px;
     }
 
     .wrapper-can-help {
@@ -10,6 +87,9 @@
     .can-help-item {
         width: 30%;
     }
+
+    // MAKE DONATION//////
+    // MAKE DONATION//////
 
     .img-donation {
         max-width: 505px;
@@ -53,8 +133,8 @@
         z-index: 3;
     }
 
-
     .nav-list {
+        overflow: hidden;
         display: block;
         position: fixed;
         padding-left: 125px;
@@ -67,11 +147,11 @@
         background-color: #000;
         z-index: 3;
         transform: translateX(100%);
-        transition: .5s;
+        transition: 0.5s;
     }
 
     .nav-list.active-nav-list {
-        transition: .5s;
+        transition: 0.5s;
         transform: translateX(0%);
     }
 
@@ -85,4 +165,65 @@
     .nav-link {
         font-size: 23px;
     }
+
+    .hero-section{
+        margin-top: 4px;
+    }
+
+    // About the shelter////@at-root
+
+    .about-title {
+        padding-bottom: 50px;
+    }
+
+    .button-our-friend {
+        margin-top: 56px;
+    }
+
+    // Our friends///////@at-root
+
+    .title.our-friend {
+        max-width: 471px;
+    }
+
+    .card-tree {
+        display: none;
+    }
+
+    .card-name {
+        padding-top: 23px;
+    }
+
+    .wrapper-our-friend {
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    // Can Help//////
+    // Can Help//////
+
+    .can-help-item {
+        width: 27%;
+    }
+
+    .wrapper-can-help {
+        // padding-left: 10px;
+        justify-content: space-around;
+        max-width: 630px;
+        gap: 53px;
+    }
+
+    .img-donation{
+        margin-top: 60px;
+        margin-bottom: 2px;
+    }
+
+    .footer-adress{
+        padding-top: 31px;
+        margin-left: -22px;
+    }
+
+    // .adress{
+    //     padding-left: 36px;
+    // }
 }

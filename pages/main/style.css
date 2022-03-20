@@ -104,7 +104,7 @@ html {
   font-weight: 400;
   font-size: 32px;
   line-height: 35.2px;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .logo-title-text-second {
@@ -171,13 +171,14 @@ html {
 
 .hero-container {
   padding-top: 60px;
-  height: 788px;
+  height: 789px;
   background-image: url(../../assets/images/start-screen-gradient-background.png);
   background-position: center -120px;
+  margin-top: -1px;
 }
 
 .hero-wrapper {
-  margin-top: 165px;
+  margin-top: 136px;
   display: flex;
   flex-direction: column;
   width: 460px;
@@ -185,7 +186,7 @@ html {
 }
 
 .hero-title {
-  width: 310px;
+  max-width: 310px;
   font-family: Georgia, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -195,7 +196,7 @@ html {
 }
 
 .hero-text {
-  padding-top: 42px;
+  padding-top: 11px;
   font-family: Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -207,6 +208,7 @@ html {
 .hero-section {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .hero-button {
@@ -242,12 +244,12 @@ button:hover,
 .wrapper-img {
   padding-top: 0px;
   max-width: 698px;
-  width: 100%;
   height: 728px;
-  background-image: url("../../assets/images/start-screen-puppy.png");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: auto;
+}
+
+.hero-img {
+  width: auto;
+  height: auto;
 }
 
 .container.about-the-shelter,
@@ -256,14 +258,17 @@ button:hover,
 }
 
 .section.about-the-shelter {
-  height: 588px;
+  min-height: 588px;
+  height: auto;
 }
 
 .about-content {
   display: flex;
-  height: 408px;
   justify-content: space-evenly;
   padding-top: 80px;
+  flex-wrap: wrap-reverse;
+  padding-bottom: 50px;
+  margin-left: 46px;
 }
 
 .img-about-pets {
@@ -273,25 +278,25 @@ button:hover,
 
 .about-title {
   width: 430px;
-  height: 380px;
+  height: auto;
+  margin-right: 44px;
 }
 
 .title,
 .about-heading {
-  width: 370px;
-  height: 90px;
+  max-width: 370px;
   padding-top: 14px;
   font-family: Georgia, sans-serif;
   font-size: 35px;
   font-style: normal;
-  line-height: 45px;
+  line-height: 46px;
   font-weight: 400;
   color: #545454;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .about-text {
-  padding-top: 25px;
+  padding-top: 32px;
   font: Arial, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -320,9 +325,10 @@ button:hover,
 
 .title.our-friend {
   margin: 0 auto;
-  padding-top: 135px;
-  width: 412px;
+  padding-top: 82px;
+  max-width: 488px;
   text-align: center;
+  letter-spacing: 10%;
 }
 
 .title.our-friend-second {
@@ -331,10 +337,11 @@ button:hover,
 
 .wrapper-our-friend {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 150px;
+  justify-content: space-between;
+  margin-top: 140px;
   flex-wrap: wrap;
   gap: 30px;
+  width: 1200px;
 }
 
 .button-prev-next {
@@ -369,6 +376,11 @@ button:hover,
   height: 435px;
   width: 270px;
   background-color: #fafafa;
+  margin-left: 10px;
+}
+
+button.card:first-child {
+  margin-right: 5px;
 }
 
 .image-card {
@@ -432,6 +444,7 @@ button:hover,
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  letter-spacing: 0.06em;
   background-color: #f1cdb3;
   border: 2px solid #f1cdb3;
   color: #292929;
@@ -450,10 +463,11 @@ button:hover,
   padding-top: 80px;
   margin: 0 auto;
   text-align: center;
+  letter-spacing: 6%;
 }
 
 .wrapper-can-help {
-  padding-top: 150px;
+  padding-top: 140px;
   max-width: 1026px;
   display: flex;
   justify-content: space-evenly;
@@ -496,12 +510,13 @@ button:hover,
   display: flex;
   padding: 80px 0 100px 0;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .img-donation {
   margin: 12px 30px 11px;
   background-color: inherit;
+  margin-left: 0px;
 }
 
 .donation-title {
@@ -566,12 +581,14 @@ button:hover,
 .title-for-question {
   color: #fff;
   padding-top: 0px;
+  width: 288px;
 }
 
 .section-for-question {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: -2px;
 }
 
 .footer-adress {
@@ -589,7 +606,7 @@ button:hover,
 .tel,
 .adress {
   position: relative;
-  margin-top: 33px;
+  margin-top: 40px;
   max-width: 251px;
   height: 32px;
   color: #f1cdb3;
@@ -616,11 +633,20 @@ button:hover,
   left: 0px;
   width: 40px;
   height: 32px;
+  top: -4px;
+}
+
+.tel::before {
+  content: url(../../assets/icons/icon-phone.svg);
 }
 
 .adress {
   max-width: 302px;
   padding-left: 40px;
+}
+
+.adress-link {
+  text-decoration: none;
 }
 
 .adress::before {
@@ -639,8 +665,76 @@ button:hover,
 }
 
 @media (max-width: 1280px) {
-  button + .card {
+  .header {
+    padding-top: 30px;
+    background-image: url(../../assets/images/start-screen-gradient-background768.png);
+    background-position: center 0px;
+    background-size: cover;
+  }
+
+  .hero-img {
     display: none;
+  }
+
+  .wrapper-img {
+    background-image: url(../../assets/images/start-screen-puppy-max-1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 569px;
+    height: 593px;
+    margin-top: 96px;
+    margin-left: 140px;
+  }
+
+  .hero-wrapper {
+    width: 460px;
+    margin-top: -28px;
+    padding-top: 0px;
+  }
+
+  .hero-container {
+    min-height: 1075px;
+    background-image: url(../../assets/images/start-screen-gradient-background768.png);
+    background-position: center -90px;
+    background-size: cover;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .about-text {
+    padding-top: 25px;
+  }
+
+  .about-content {
+    padding-top: 65px;
+  }
+
+  .img-about-pets {
+    margin-top: 30px;
+    margin-left: -47px;
+    margin-bottom: 50px;
+  }
+
+  .wrapper-our-friend {
+    margin-top: 60px;
+    width: auto;
+  }
+
+  .card:nth-child(4) {
+    display: none;
+  }
+
+  .wrapper-can-help {
+    padding-top: 60px;
   }
 
   .wrapper-can-help {
@@ -686,6 +780,7 @@ button:hover,
   }
 
   .nav-list {
+    overflow: hidden;
     display: block;
     position: fixed;
     padding-left: 125px;
@@ -715,6 +810,55 @@ button:hover,
 
   .nav-link {
     font-size: 23px;
+  }
+
+  .hero-section {
+    margin-top: 4px;
+  }
+
+  .about-title {
+    padding-bottom: 50px;
+  }
+
+  .button-our-friend {
+    margin-top: 56px;
+  }
+
+  .title.our-friend {
+    max-width: 471px;
+  }
+
+  .card-tree {
+    display: none;
+  }
+
+  .card-name {
+    padding-top: 23px;
+  }
+
+  .wrapper-our-friend {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .can-help-item {
+    width: 27%;
+  }
+
+  .wrapper-can-help {
+    justify-content: space-around;
+    max-width: 630px;
+    gap: 53px;
+  }
+
+  .img-donation {
+    margin-top: 60px;
+    margin-bottom: 2px;
+  }
+
+  .footer-adress {
+    padding-top: 31px;
+    margin-left: -22px;
   }
 }
 
