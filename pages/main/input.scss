@@ -86,7 +86,7 @@ html {
     font-size: 13px;
     line-height: 15px;
     padding-top: 10px;
-    letter-spacing: 10%;
+    letter-spacing: .06em;
 }
 
 .logo-title-text-text-second {
@@ -195,6 +195,8 @@ html {
     background-color: $colorF1CDB3;
     border: none;
     transition: 0.2s;
+    letter-spacing: .06em;
+
 }
 button:hover,
 .donation-card:hover {
@@ -264,7 +266,7 @@ button:hover,
 }
 
 .about-text {
-    padding-top: 32px;
+    padding-top: 24px;
     font: $fontArial;
     font-size: 15px;
     font-style: normal;
@@ -296,7 +298,9 @@ button:hover,
 
 .title.our-friend {
     margin: 0 auto;
-    padding-top: 82px;
+    padding-top: 135px;
+    padding-left: 10px;
+
     max-width: 488px;
     text-align: center;
     letter-spacing: 10%;
@@ -309,7 +313,7 @@ button:hover,
 .wrapper-our-friend {
     display: flex;
     justify-content: space-between;
-    margin-top: 140px;
+    margin-top: 59px;
     flex-wrap: wrap;
     gap: 30px;
     width: 1200px;
@@ -408,7 +412,7 @@ button.card:first-child{
 }
 
 .button-our-friend {
-    margin: 60px 0 45px;
+     margin: 60px -11px 45px;
     height: 52px;
     width: 261px;
     border-radius: 100px;
@@ -442,7 +446,7 @@ button.card:first-child{
 
 .wrapper-can-help {
     // position: relative;
-    padding-top: 140px;
+    padding-top: 58px;
     max-width: 1026px;
     display: flex;
     justify-content: space-evenly;
@@ -552,9 +556,11 @@ button.card:first-child{
 
 .for-question {
     position: relative;
+    margin-top: 1px;
     min-height: 350px;
     height: auto;
     background-image: url(../../assets/images/footer-gradient-background.jpg);
+    
 }
 
 .title-for-question {
@@ -572,7 +578,7 @@ button.card:first-child{
 
 .footer-adress {
     max-width: 278px;
-    height: 234px;
+    height: auto;
     padding-top: 56px;
 }
 .mailto-email,
@@ -596,6 +602,8 @@ button.card:first-child{
     padding-left: 60px;
     vertical-align: middle;
     transition: 0.2s;
+    letter-spacing: 0.06em;
+
 }
 
 .e-mail:hover,
