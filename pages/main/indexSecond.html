@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="../../assets/icons/favicon.ico">
 
     <title>shelter</title>
 </head>
+
 <body>
     <header class=" header-second">
         <div class="container  header-container header-container-second">
             <div class="logo-title logo-title-second">
-                <p class="logo-title-text logo-title-text-second">Cozy House</p>
+                <h1 class="logo-title-text logo-title-text-second">Cozy House</h1>
                 <p class="logo-title-text-text logo-title-text-text-second">Shelter for pets in Boston</p>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link-second ">About the shelter</a>
+                        <a href="Index.html" class="nav-link-second ">About the shelter</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link-second nav-link-second-second ">Our pets</a>
+                        <a href="#our-friend" class="nav-link-second nav-link-second-second ">Our pets</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link-second">Help the shelter</a>
+                        <a href="Index.html#can-help" class="nav-link-second">Help the shelter</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link-second">Contacts</a>
+                        <a href="#footer" class="nav-link-second">Contacts</a>
                     </li>
             </nav>
             <div class="header-burger">
@@ -42,7 +45,7 @@
         <section class="section-our-friend section-our-friend-second">
             <h2 class="title our-friend our-friend-second">Our friends who <br>
                 are looking for a house</h2>
-            <div class="wrapper-our-friend">
+            <div class="wrapper-our-friend wrapper-our-friend-second">
                 <div class="card card-second">
                     <img class="image-card" width="270" height="270" src="../../assets/images/pets-katrine.jpg"
                         alt="img">
@@ -60,8 +63,7 @@
                     </button>
                 </div>
                 <div class="card card-second">
-                    <img class="image-card" width="270" height="270" src="../../assets/images/pets-woody.jpg"
-                        alt="img">
+                    <img class="image-card" width="270" height="270" src="../../assets/images/pets-woody.jpg" alt="img">
                     <p class="card-name">Woody</p>
                     <button class="card-button">
                         <p>Learn more</p>
@@ -76,8 +78,7 @@
                     </button>
                 </div>
                 <div class="card card-second">
-                    <img class="image-card" width="270" height="270" src="../../assets/images/pets-timmy.jpg"
-                        alt="img">
+                    <img class="image-card" width="270" height="270" src="../../assets/images/pets-timmy.jpg" alt="img">
                     <p class="card-name">Timmy</p>
                     <button class="card-button">
                         <p>Learn more</p>
@@ -108,42 +109,53 @@
                     </button>
                 </div>
             </div>
-           <div class="wrapper-prev-next">
-            <button class="button-prev-next button-prev-next-second">
-                <img class="image-button-prev" src="../../assets/icons/s--.svg" alt="button">
-            </button>
-            <button class="button-prev-next button-prev-next-second">
-                <img class="image-button-prev" src="../../assets/icons/s-.svg" alt="button">
-            </button>
-            <button class="button-prev-next button-prev-next-second button-prev-next-second-number">
-                1
-            </button>
-            <button class="button-prev-next button-prev-next-second">
-                <img class="image-button-prev" src="../../assets/icons/-s.svg" alt="button">
-            </button>
-            <button class="button-prev-next button-prev-next-second" >
-                <img class="image-button-prev" src="../../assets/icons/--s.svg" alt="button">
-            </button>
-           </div> 
+            <div class="wrapper-prev-next">
+                <button class=" button-prev-next-second button-prev-next-second-disabled"
+                   disabled>
+                    <img class="image-button-prev" src="../../assets/icons/s--.svg" alt="button">
+                </button>
+                <button class=" button-prev-next-second button-prev-next-second-disabled"
+                    disabled>
+                    <img class="image-button-prev" src="../../assets/icons/s-.svg" alt="button">
+                </button>
+                <button class=" button-prev-next-second button-prev-next-second-number">
+                    1                </button>
+                <button class=" button-prev-next-second">
+                    <img class="image-button-prev" src="../../assets/icons/-s.svg" alt="button">
+                </button>
+                <button class="button-prev-next button-prev-next-second">
+                    <img class="image-button-prev" src="../../assets/icons/--s.svg" alt="button">
+                </button>
+            </div>
         </section>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container for-question">
-            <section class="section-for-question">
+            <section class="section-for-question section-for-question-second" id="footer">
                 <div class="footer-adress">
-                    <h2 class="title title-for-question">For questions <br> and suggestions</h2>
-                    <p class="e-mail">email@shelter.com</p>
-                    <p class="tel">+13 674 567 75 54</p>
+                    <h2 class="title title-for-question">For questions and suggestions</h2>
+                    <a href="mailto: email@shelter.com" class="mailto-email">
+                        <p class="e-mail"> email@shelter.com </p>
+                    </a>
+                    <a href="tel:+136745677554" class="telephon">
+                        <p class="tel">+13 674 567 75 54</p>
+                    </a>
                 </div>
                 <div class="footer-adress">
-                    <h2 class=" title title-for-question">We are waiting <br> for your visit</h2>
-                    <p class="adress"> 1 Central Street, Boston (entrance from the store)</p>
-                    <p class="adress"> 18 South Park, London </p>
+                    <h2 class=" title title-for-question">We are waiting for your visit</h2>
+                    <a href="https://goo.gl/maps/NMLysB6WGXu2MoAd7" class="adress-link">
+                        <p class="adress"> 1 Central Street, Boston (entrance from the store)</p>
+                    </a>
+                    <a href="https://goo.gl/maps/NMLysB6WGXu2MoAd7" class="adress-link">
+                        <p class="adress adress-second"> 18 South Park, London </p>
+                    </a>
                 </div>
                 <div class="footer-puppy">
 
                 </div>
             </section>
+        </div>
     </footer>
 </body>
+
 </html>

@@ -1,3 +1,16 @@
+@media (min-width: 1280px) {
+    .can-help-item:nth-child(6){
+        margin-left: 74px;
+    }
+
+    .can-help-item:nth-child(8){
+    margin-left: 10px;
+    }
+    .can-help-item:nth-child(9){
+        margin-right: 71px;
+    }
+}
+
 @media (max-width: 1279px) {
     // SECTION HERO
 
@@ -165,7 +178,7 @@
         background-image: url(../../assets/images/start-screen-background320.jpg);
         background-position: center -90px;
         background-size: cover;
-        min-height: 823px-60px;
+        min-height: 734px;
         height: 500px;
     }
 
@@ -248,12 +261,8 @@
     // About the shelter////@at-root
     // About the shelter////////////////
 
-    .title,
-    .about-heading {
-        font-size: 25px;
-        line-height: 32px;
-        text-align: center;
-        margin-top: -65px;
+    .title.about-heading {
+        margin-top: -37px;
     }
 
     .about-content {
@@ -294,6 +303,7 @@
 
     .card {
         margin-top: -15px;
+        // margin-left: 15px;
     }
 
     .card-tree {
@@ -307,8 +317,132 @@
     .card:nth-child(3) {
         display: none;
     }
+
     .wrapper-our-friend {
         margin-top: 60px;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    // Can Help//////
+    // Can Help//////
+
+    .section-can-help {
+        height: px;
+    }
+
+    .title.can-help {
+        padding-top: 39px;
+    }
+
+    .can-help-img {
+        transform: scale(0.8);
+    }
+
+    .can-help-text {
+        font-size: 15px;
+        line-height: 16.5px;
+        padding-top: 20px;
+    }
+
+    .wrapper-can-help {
+        gap: 20px;
+    }
+
+    //Make donation////////////////
+    //Make donation////////////////
+
+    .img-donation {
+        margin-top: 12px;
+        margin-bottom: 2px;
+        transform: scale(0.9);
+    }
+
+    .section-make-donation {
+        padding: 99px 0px 100px;
+    }
+
+    .about-text-donation {
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .section-for-question {
+        gap: 8px;
+    }
+
+    .donation-card {
+        margin-top: 25px;
+        width: 281px;
+        justify-content: space-evenly;
+    }
+
+    .number-card {
+        text-align: center;
+        font-size: 15px;
+        line-height: 16.5px;
+    }
+
+    .donation-text {
+        text-align: center;
+        width: 280px;
+        margin: auto;
+        letter-spacing: 0.06em;
+    }
+
+    .footer-adress {
+        padding-top: 72px;
+        margin-top: -57px;
+    }
+
+    .title-for-question {
+        padding-top: 81px;
+        width: 270px;
+        text-align: center;
+    }
+
+    .footer-adress {
+        width: 278px;
+        text-align: center;
+    }
+    .e-mail,
+    .tel {
+        padding-left: 73px;
+        margin-top: 45px;
+        height: 27px;
+        max-width: 264px;
+    }
+
+    .e-mail::before,
+    .tel::before {
+        left: 13px;
+    }
+
+    .adress {
+        padding-left: 22px;
+    }
+
+    .adress::before {
+        left: -19px;
+        top: 10px;
+    }
+
+    .adress-second {
+        padding-top: 18px;
+        padding-left: 5px;
+    }
+
+    .footer-puppy {
+        width: 260px;
+        height: 269px;
+        background-size: contain;
+        margin-top: 47px;
+    }
+}
+
+@media (max-width: 415px) {
+    .wrapper-our-friend {
+        flex-wrap: wrap;
     }
 
     .button-prev-next {
@@ -320,35 +454,38 @@
     .button-next {
         margin-right: 57px;
     }
+}
 
-    // Can Help//////
-    // Can Help//////
-
-    .title.can-help {
-        padding-top: 39px;
-    }
-    .can-help-img {
-        transform: scale(0.8);
+@media (max-width: 320px) {
+    .make-donation {
+        // min-height: 542.2px;
+        height: 551.2px;
     }
 
-    .can-help-text {
-        font-size: 15px;
-        line-height: 16.5px;
-        padding-top: 20px;
+    .title,
+    .about-heading {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        margin-top: -65px;
     }
+
+    // Can help/////@at-root
+    // Can help/////@at-root
+    .section-can-help {
+        height: 745px;
+    }
+
     .can-help-item {
         width: 38%;
     }
     .can-help-item:nth-child(7) {
         margin-left: 14px;
-
     }
-
 
     .can-help-item:nth-child(8) {
         width: 41%;
         margin-left: 26px;
-
     }
 
     .can-help-item:nth-child(9) {
@@ -362,18 +499,4 @@
         padding-top: 36px;
         margin-left: -4px;
     }
-
-    .img-donation {
-        margin-top: 60px;
-        margin-bottom: 2px;
-    }
-
-    .footer-adress {
-        padding-top: 31px;
-        margin-left: -22px;
-    }
-
-    // .adress{
-    //     padding-left: 36px;
-    // }
 }

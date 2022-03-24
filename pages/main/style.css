@@ -69,7 +69,8 @@ html {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1298px;
+  width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -84,11 +85,16 @@ html {
 }
 
 .header-second {
-  max-width: 1280px;
+  position: fixed;
+  max-width: auto;
+  width: 1280px;
   margin: 0 auto;
   padding-top: 30px;
   height: 120px;
   background-color: #fff;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .header-container {
@@ -110,6 +116,11 @@ html {
 .logo-title-text-second {
   color: #545454;
   letter-spacing: 6%;
+  margin-bottom: 0px;
+}
+
+.logo-title-second {
+  margin-top: -22px;
 }
 
 .logo-title-text-text {
@@ -120,7 +131,8 @@ html {
   font-size: 13px;
   line-height: 15px;
   padding-top: 10px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
+  padding-left: 3px;
 }
 
 .logo-title-text-text-second {
@@ -139,14 +151,17 @@ html {
 .nav-link.nav-link-first {
   color: #fafafa;
   border-bottom: 3px solid #f1cdb3;
+  padding-bottom: 2px;
 }
 
 .nav-link-second-second {
   border-bottom: 3px solid #f1cdb3;
+  padding-bottom: 2px;
 }
 
 .nav-link,
-.nav-link-second {
+.nav-link-second,
+.button-link {
   font-family: Arial, sans-serif;
   font-weight: 400, Regular;
   font-style: normal;
@@ -171,7 +186,7 @@ html {
 
 .hero-container {
   padding-top: 60px;
-  height: 789px;
+  height: 791px;
   background-image: url(../../assets/images/start-screen-gradient-background.png);
   background-position: center -120px;
   margin-top: -1px;
@@ -196,7 +211,7 @@ html {
 }
 
 .hero-text {
-  padding-top: 11px;
+  padding-top: 12px;
   font-family: Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -229,7 +244,7 @@ html {
   letter-spacing: 0.06em;
 }
 
-button:hover,
+button:not([disabled]):hover,
 .donation-card:hover {
   cursor: pointer;
 }
@@ -239,6 +254,14 @@ button:hover,
 .card-button:hover,
 .button-prev-next:hover,
 .donation-card:hover {
+  background-color: #fddcc4;
+}
+
+.button-prev-next-second:not([disabled]):hover {
+  background-color: #fddcc4;
+}
+
+.card:hover > .card-button {
   background-color: #fddcc4;
 }
 
@@ -333,8 +356,9 @@ button:hover,
   letter-spacing: 10%;
 }
 
-.title.our-friend-second {
-  padding-top: 80px;
+.title.our-friend.our-friend-second {
+  padding-top: 199px;
+  padding-left: 33px;
 }
 
 .wrapper-our-friend {
@@ -342,11 +366,15 @@ button:hover,
   justify-content: space-between;
   margin-top: 59px;
   flex-wrap: wrap;
-  gap: 30px;
-  width: 1200px;
 }
 
-.button-prev-next {
+.wrapper-our-friend-second {
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+.button-prev-next,
+.button-prev-next-second {
   margin-top: 192px;
   display: block;
   height: 52px;
@@ -356,10 +384,20 @@ button:hover,
   transition: 0.2s;
 }
 
+.button-next {
+  margin-right: 18px;
+}
+
 .wrapper-prev-next {
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
+  padding-top: 18px;
+  margin-left: -21px;
+}
+
+.button-prev-next-second-disabled {
+  border: 2px solid #cdcdcd;
 }
 
 .button-prev-next-second {
@@ -378,35 +416,26 @@ button:hover,
   height: 435px;
   width: 270px;
   background-color: #fafafa;
-  margin-left: 10px;
 }
 
-button.card:first-child {
-  margin-right: 5px;
+.card:nth-child(2) {
+  margin-left: -31px;
 }
 
-.image-card {
-  background-color: red;
-}
-
-.card:first-child {
-  margin-left: 53px;
-}
-
-.card-second:first-child {
+.card-second:nth-child(2) {
   margin-left: 0px;
 }
 
-.card:last-child {
-  margin-right: 53px;
+.card:nth-child(4) {
+  margin-right: -21px;
 }
 
-.card-second:last-child {
+.card-second:nth-child(4) {
   margin-right: 0px;
 }
 
 .card-name {
-  padding-top: 30px;
+  padding-top: 25px;
   text-align: center;
   font-family: Georgia, sans-serif;
   font-size: 20px;
@@ -591,13 +620,21 @@ button.card:first-child {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: -2px;
+  margin-top: -3px;
+}
+
+.section-for-question-second {
+  margin-top: -4px;
 }
 
 .footer-adress {
-  max-width: 278px;
+  max-width: 293px;
   height: auto;
   padding-top: 56px;
+}
+
+.footer-adress:nth-child(2) {
+  margin-left: -22px;
 }
 
 .mailto-email,
@@ -644,9 +681,14 @@ button.card:first-child {
   content: url(../../assets/icons/icon-phone.svg);
 }
 
-.adress {
+p.adress:first-child {
   max-width: 302px;
   padding-left: 40px;
+  margin-top: 33px;
+}
+
+p.adress.adress-second {
+  padding-top: 17px;
 }
 
 .adress-link {
@@ -668,6 +710,19 @@ button.card:first-child {
   background: url(../../assets/images/footer-puppy.png);
 }
 
+@media (min-width: 1280px) {
+  .can-help-item:nth-child(6) {
+    margin-left: 74px;
+  }
+
+  .can-help-item:nth-child(8) {
+    margin-left: 10px;
+  }
+
+  .can-help-item:nth-child(9) {
+    margin-right: 71px;
+  }
+}
 @media (max-width: 1279px) {
   .header {
     padding-top: 30px;
@@ -817,7 +872,7 @@ button.card:first-child {
     background-image: url(../../assets/images/start-screen-background320.jpg);
     background-position: center -90px;
     background-size: cover;
-    min-height: 763px;
+    min-height: 734px;
     height: 500px;
   }
 
@@ -897,12 +952,8 @@ button.card:first-child {
     font-size: 23px;
   }
 
-  .title,
-.about-heading {
-    font-size: 25px;
-    line-height: 32px;
-    text-align: center;
-    margin-top: -65px;
+  .title.about-heading {
+    margin-top: -37px;
   }
 
   .about-content {
@@ -960,16 +1011,12 @@ button.card:first-child {
 
   .wrapper-our-friend {
     margin-top: 60px;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
   }
 
-  .button-prev-next {
-    order: 5;
-    margin-top: 10px;
-    margin-left: 58px;
-  }
-
-  .button-next {
-    margin-right: 57px;
+  .section-can-help {
+    height: px;
   }
 
   .title.can-help {
@@ -984,6 +1031,130 @@ button.card:first-child {
     font-size: 15px;
     line-height: 16.5px;
     padding-top: 20px;
+  }
+
+  .wrapper-can-help {
+    gap: 20px;
+  }
+
+  .img-donation {
+    margin-top: 12px;
+    margin-bottom: 2px;
+    transform: scale(0.9);
+  }
+
+  .section-make-donation {
+    padding: 99px 0px 100px;
+  }
+
+  .about-text-donation {
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  .section-for-question {
+    gap: 8px;
+  }
+
+  .donation-card {
+    margin-top: 25px;
+    width: 281px;
+    justify-content: space-evenly;
+  }
+
+  .number-card {
+    text-align: center;
+    font-size: 15px;
+    line-height: 16.5px;
+  }
+
+  .donation-text {
+    text-align: center;
+    width: 280px;
+    margin: auto;
+    letter-spacing: 0.06em;
+  }
+
+  .footer-adress {
+    padding-top: 72px;
+    margin-top: -57px;
+  }
+
+  .title-for-question {
+    padding-top: 81px;
+    width: 270px;
+    text-align: center;
+  }
+
+  .footer-adress {
+    width: 278px;
+    text-align: center;
+  }
+
+  .e-mail,
+.tel {
+    padding-left: 73px;
+    margin-top: 45px;
+    height: 27px;
+    max-width: 264px;
+  }
+
+  .e-mail::before,
+.tel::before {
+    left: 13px;
+  }
+
+  .adress {
+    padding-left: 22px;
+  }
+
+  .adress::before {
+    left: -19px;
+    top: 10px;
+  }
+
+  .adress-second {
+    padding-top: 18px;
+    padding-left: 5px;
+  }
+
+  .footer-puppy {
+    width: 260px;
+    height: 269px;
+    background-size: contain;
+    margin-top: 47px;
+  }
+}
+@media (max-width: 415px) {
+  .wrapper-our-friend {
+    flex-wrap: wrap;
+  }
+
+  .button-prev-next {
+    order: 5;
+    margin-top: 10px;
+    margin-left: 58px;
+  }
+
+  .button-next {
+    margin-right: 57px;
+  }
+}
+@media (max-width: 320px) {
+  .make-donation {
+    height: 551.2px;
+  }
+
+  .title,
+.about-heading {
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: -65px;
+  }
+
+  .section-can-help {
+    height: 745px;
   }
 
   .can-help-item {
@@ -1009,16 +1180,6 @@ button.card:first-child {
     gap: 3px;
     padding-top: 36px;
     margin-left: -4px;
-  }
-
-  .img-donation {
-    margin-top: 60px;
-    margin-bottom: 2px;
-  }
-
-  .footer-adress {
-    padding-top: 31px;
-    margin-left: -22px;
   }
 }
 
