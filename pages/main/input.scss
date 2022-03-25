@@ -83,12 +83,11 @@ html {
     color: $colorDarc;
     letter-spacing: 6%;
     margin-bottom: 0px;
-    
 }
 
-.logo-title-second{
-margin-top: -22px;
-
+.logo-title-second {
+    margin-top: -22px;
+    margin-left: 10px;
 }
 
 .logo-title-text-text {
@@ -113,13 +112,22 @@ margin-top: -22px;
     align-items: center;
     list-style: none;
     width: 443px;
-    padding-left: 0px;
+    padding-left: 2px;
+}
+
+ a.nav-list-second {
+    padding-left: 20px;
 }
 
 .nav-link.nav-link-first {
     color: #fafafa;
     border-bottom: 3px solid #f1cdb3;
     padding-bottom: 2px;
+    // padding-left: -10px;
+}
+
+.nav-link-first {
+    
 }
 
 .nav-link-second-second {
@@ -198,7 +206,7 @@ margin-top: -22px;
 
 .hero-button {
     display: block;
-    margin-top: 42px;
+    margin-top: 40px;
     margin-bottom: 0px;
     width: 207px;
     height: 52px;
@@ -249,6 +257,7 @@ button:not([disabled]):hover,
 .container.about-the-shelter,
 .container.can-help {
     background-color: #fff;
+    margin-top: -2px;
 }
 
 .section.about-the-shelter {
@@ -342,15 +351,13 @@ button:not([disabled]):hover,
     flex-wrap: wrap;
 }
 
-.wrapper-our-friend-second{
+.wrapper-our-friend-second {
     gap: 30px;
     justify-content: space-evenly;
-
-
 }
 
 .button-prev-next,
-.button-prev-next-second{
+.button-prev-next-second {
     margin-top: 192px;
     display: block;
     height: 52px;
@@ -394,19 +401,19 @@ button:not([disabled]):hover,
     background-color: #fafafa;
     // margin-left: 10px;
 }
-.card:nth-child(2){
+.card:nth-child(2) {
     margin-left: -31px;
 }
 
-.card-second:nth-child(2){
+.card-second:nth-child(2) {
     margin-left: 0px;
 }
 
-.card:nth-child(4){
-    margin-right: -21px;
+.card:nth-child(4) {
+    margin-right: -29px;
 }
 
-.card-second:nth-child(4){
+.card-second:nth-child(4) {
     margin-right: 0px;
 }
 
@@ -476,7 +483,7 @@ button:not([disabled]):hover,
 
 .wrapper-can-help {
     // position: relative;
-    padding-top: 58px;
+    padding-top: 59px;
     max-width: 1026px;
     display: flex;
     justify-content: space-evenly;
@@ -493,8 +500,6 @@ button:not([disabled]):hover,
     display: flex;
     flex-direction: column;
 }
-
-
 
 .can-help-text {
     padding-top: 30px;
@@ -549,7 +554,7 @@ button:not([disabled]):hover,
 
 .donation-card {
     display: flex;
-    margin-top: 20px;
+    margin-top: 17px;
     justify-content: space-around;
     width: 349px;
     height: 43px;
@@ -557,6 +562,7 @@ button:not([disabled]):hover,
     align-items: center;
     border-radius: 9px;
     transition: 0.3s;
+    margin-top: 20px;
 }
 
 .donation-href {
@@ -604,10 +610,10 @@ button:not([disabled]):hover,
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: -3px;
+    margin-top: -1px;
 }
 
-.section-for-question-second{
+.section-for-question-second {
     margin-top: -4px;
     // margin-left: 1px;
 }
