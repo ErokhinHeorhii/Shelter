@@ -34,14 +34,15 @@ html {
 }
 
 .container {
-    max-width: 1298px;
-    width: 1280px;
+    max-width: 1280px;
+    // width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
 .header {
     max-width: 1280px;
+    // width: 1280px;
     margin: 0 auto;
     padding-top: 60px;
     background-image: url(../../assets/images/start-screen-gradient-background.png);
@@ -87,7 +88,6 @@ html {
 
 .logo-title-second {
     margin-top: -22px;
-    margin-left: 10px;
 }
 
 .logo-title-text-text {
@@ -115,7 +115,7 @@ html {
     padding-left: 2px;
 }
 
- a.nav-list-second {
+a.nav-list-second {
     padding-left: 20px;
 }
 
@@ -124,10 +124,6 @@ html {
     border-bottom: 3px solid #f1cdb3;
     padding-bottom: 2px;
     // padding-left: -10px;
-}
-
-.nav-link-first {
-    
 }
 
 .nav-link-second-second {
@@ -205,9 +201,8 @@ html {
 }
 
 .hero-button {
-    display: block;
+    display: flex;
     margin-top: 40px;
-    margin-bottom: 0px;
     width: 207px;
     height: 52px;
     border-radius: 100px;
@@ -220,7 +215,10 @@ html {
     border: none;
     transition: 0.2s;
     letter-spacing: 0.06em;
+    justify-content: center;
+    align-items: center;
 }
+
 button:not([disabled]):hover,
 .donation-card:hover {
     cursor: pointer;
@@ -239,6 +237,11 @@ button:not([disabled]):hover,
 
 .card:hover > .card-button {
     background-color: #fddcc4;
+}
+
+.card:hover {
+    background-color: white;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .wrapper-img {
@@ -395,11 +398,16 @@ button:not([disabled]):hover,
     font-weight: 400;
 }
 
+.image-card {
+    border-radius: 9px 9px 0px 0px;
+}
+
 .card {
     height: 435px;
     width: 270px;
     background-color: #fafafa;
-    // margin-left: 10px;
+    transition: 0.3s;
+    border-radius: 9px;
 }
 .card:nth-child(2) {
     margin-left: -31px;
