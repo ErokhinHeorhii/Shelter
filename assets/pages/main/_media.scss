@@ -1,0 +1,502 @@
+@media (min-width: 1280px) {
+    .can-help-item:nth-child(6){
+        margin-left: 74px;
+    }
+
+    .can-help-item:nth-child(8){
+    margin-left: 10px;
+    }
+    .can-help-item:nth-child(9){
+        margin-right: 71px;
+    }
+}
+
+@media (max-width: 1279px) {
+    // SECTION HERO
+
+    .header {
+        padding-top: 30px;
+        background-image: url(../../assets/images/start-screen-gradient-background768.png);
+        background-position: center 0px;
+        background-size: cover;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .wrapper-img {
+        background-image: url(../../assets/images/start-screen-puppy-max-1280.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 569px;
+        height: 593px;
+        margin-top: 96px;
+        margin-left: 140px;
+    }
+
+    .hero-wrapper {
+        width: 460px;
+        margin-top: -28px;
+        padding-top: 0px;
+    }
+
+    .hero-container {
+        min-height: 1165px-90px;
+        background-image: url(../../assets/images/start-screen-gradient-background768.png);
+        background-position: center -90px;
+        background-size: cover;
+    }
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        // height: auto;
+    }
+
+    .hero-button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    //About the shelter/////////
+    //About the shelter/////////
+
+    .about-text {
+        padding-top: 25px;
+    }
+
+    .about-content {
+        padding-top: 65px;
+    }
+
+    .img-about-pets {
+        margin-top: 78px;
+        margin-left: -47px;
+        margin-bottom: 50px;
+    }
+
+    // OUR FRIEND//////
+    // OUR FRIEND//////
+
+    .title.our-friend {
+        padding-top: 81px;
+        padding-left: 30px;
+        margin: 0 auto;
+    }
+
+    .wrapper-our-friend {
+        margin-top: 60px;
+        width: auto;
+        gap: 8px;
+    }
+
+    .card:nth-child(4) {
+        display: none;
+    }
+
+    .button-our-friend {
+        left: 52%;
+    }
+
+    // HOW YOU CAN HELP/////////
+    // HOW YOU CAN HELP/////////
+
+    .wrapper-can-help {
+        padding-top: 60px;
+    }
+
+    .wrapper-can-help {
+        gap: 51px;
+    }
+
+    .can-help-item {
+        width: 28%;
+    }
+
+    // MAKE DONATION//////
+    // MAKE DONATION//////
+
+    .img-donation {
+        max-width: 505px;
+        width: 100%;
+        height: auto;
+        margin: 60px 4px 11px 0px;
+    }
+
+    .donation-title {
+        padding-top: 7px;
+    }
+
+    // footer///////////
+
+    .for-question {
+        background-image: url(../../assets/images/footer-gradient-background1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -12px;
+    }
+
+    .section-for-question {
+        justify-content: space-evenly;
+        gap: 18px;
+    }
+
+    .footer-adress {
+        width: 55%;
+        max-width: 300px;
+        padding-top: 30px;
+    }
+
+    .footer-puppy {
+        width: 55%;
+        margin-top: 50px;
+        background-repeat: no-repeat;
+        margin-top: 46px;
+        background-position: center;
+        // margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0px 10px;
+    }
+
+    .header {
+        background-image: url(../../assets/images/start-screen-background320.jpg);
+        background-position: center 0px;
+        background-size: cover;
+    }
+
+    .header-container {
+        justify-content: space-evenly;
+        padding-left: 1px;
+    }
+
+    .hero-container {
+        background-image: url(../../assets/images/start-screen-background320.jpg);
+        background-position: center -90px;
+        background-size: cover;
+        min-height: 734px;
+        height: 500px;
+    }
+
+    .hero-wrapper {
+        width: 300px;
+        height: auto;
+        padding-top: 73px;
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 25px;
+        line-height: 32.5px;
+        text-align: center;
+        width: 260px;
+        letter-spacing: 0.06em;
+        padding-left: 43px;
+    }
+
+    .hero-text {
+        text-align: center;
+        padding-top: 24px;
+        padding-left: 0px;
+    }
+
+    .logo-title-text {
+        margin-left: -10px;
+    }
+
+    .logo-title-text-text {
+        letter-spacing: 0.1em;
+        margin-left: -6px;
+    }
+
+    .wrapper-img {
+        width: 260px;
+        margin-left: 42px;
+        height: 271px;
+        margin-top: 105px;
+    }
+
+    .header-burger {
+        display: block;
+        z-index: 3;
+    }
+
+    .nav-list {
+        overflow: hidden;
+        display: block;
+        position: fixed;
+        padding-left: 125px;
+        padding-top: 134px;
+        max-width: 620px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        margin-left: 148px;
+        background-color: #000;
+        z-index: 3;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+
+    .nav-list.active-nav-list {
+        transition: 0.5s;
+        transform: translateX(0%);
+    }
+
+    .nav-item {
+        width: 180px;
+        padding-bottom: 10px;
+        font-size: px;
+        line-height: 35.5px;
+    }
+
+    .nav-link {
+        font-size: 23px;
+    }
+
+    // About the shelter////@at-root
+    // About the shelter////////////////
+
+    .title.about-heading {
+        margin-top: -37px;
+    }
+
+    .about-content {
+        margin-left: 14px;
+    }
+    .about-title {
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+
+    .about-text {
+        padding-top: 23px;
+        text-align: justify;
+    }
+
+    .button-our-friend {
+        margin-top: 41px;
+    }
+
+    .img-about-pets {
+        width: 260px;
+        height: auto;
+        margin-top: -8px;
+        margin-bottom: -9px;
+        margin-left: -11px;
+    }
+    // Our friends///////@at-root
+
+    .section-our-friend {
+        min-height: 791px;
+    }
+    .title.our-friend {
+        width: 300px;
+        padding-top: 42px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .card {
+        margin-top: -15px;
+        // margin-left: 15px;
+    }
+
+    .card-tree {
+        display: none;
+    }
+
+    .card-name {
+        padding-top: 23px;
+    }
+
+    .card:nth-child(3) {
+        display: none;
+    }
+
+    .wrapper-our-friend {
+        margin-top: 60px;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    // Can Help//////
+    // Can Help//////
+
+    .section-can-help {
+        height: px;
+    }
+
+    .title.can-help {
+        padding-top: 39px;
+    }
+
+    .can-help-img {
+        transform: scale(0.8);
+    }
+
+    .can-help-text {
+        font-size: 15px;
+        line-height: 16.5px;
+        padding-top: 20px;
+    }
+
+    .wrapper-can-help {
+        gap: 20px;
+    }
+
+    //Make donation////////////////
+    //Make donation////////////////
+
+    .img-donation {
+        margin-top: 12px;
+        margin-bottom: 2px;
+        transform: scale(0.9);
+    }
+
+    .section-make-donation {
+        padding: 99px 0px 100px;
+    }
+
+    .about-text-donation {
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .section-for-question {
+        gap: 8px;
+    }
+
+    .donation-card {
+        margin-top: 25px;
+        width: 281px;
+        justify-content: space-evenly;
+    }
+
+    .number-card {
+        text-align: center;
+        font-size: 15px;
+        line-height: 16.5px;
+    }
+
+    .donation-text {
+        text-align: center;
+        width: 280px;
+        margin: auto;
+        letter-spacing: 0.06em;
+    }
+
+    .footer-adress {
+        padding-top: 72px;
+        margin-top: -57px;
+    }
+
+    .title-for-question {
+        padding-top: 81px;
+        width: 270px;
+        text-align: center;
+    }
+
+    .footer-adress {
+        width: 278px;
+        text-align: center;
+    }
+    .e-mail,
+    .tel {
+        padding-left: 73px;
+        margin-top: 45px;
+        height: 27px;
+        max-width: 264px;
+    }
+
+    .e-mail::before,
+    .tel::before {
+        left: 13px;
+    }
+
+    .adress {
+        padding-left: 22px;
+    }
+
+    .adress::before {
+        left: -19px;
+        top: 10px;
+    }
+
+    .adress-second {
+        padding-top: 18px;
+        padding-left: 5px;
+    }
+
+    .footer-puppy {
+        width: 260px;
+        height: 269px;
+        background-size: contain;
+        margin-top: 47px;
+    }
+}
+
+@media (max-width: 415px) {
+    .wrapper-our-friend {
+        flex-wrap: wrap;
+    }
+
+    .button-prev-next {
+        order: 5;
+        margin-top: 10px;
+        margin-left: 58px;
+    }
+
+    .button-next {
+        margin-right: 57px;
+    }
+}
+
+@media (max-width: 320px) {
+    .make-donation {
+        // min-height: 542.2px;
+        height: 551.2px;
+    }
+
+    .title,
+    .about-heading {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        margin-top: -65px;
+    }
+
+    // Can help/////@at-root
+    // Can help/////@at-root
+    .section-can-help {
+        height: 745px;
+    }
+
+    .can-help-item {
+        width: 38%;
+    }
+    .can-help-item:nth-child(7) {
+        margin-left: 14px;
+    }
+
+    .can-help-item:nth-child(8) {
+        width: 41%;
+        margin-left: 26px;
+    }
+
+    .can-help-item:nth-child(9) {
+        margin-right: 154px;
+    }
+
+    .wrapper-can-help {
+        justify-content: space-around;
+        max-width: 630px;
+        gap: 3px;
+        padding-top: 36px;
+        margin-left: -4px;
+    }
+}
